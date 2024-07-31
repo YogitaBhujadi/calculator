@@ -12,6 +12,7 @@
             margin: 20px auto;
             border-radius: 10px;
             padding: 20px;
+            padding-top: 40px;
         }
 
         .screen{
@@ -22,12 +23,62 @@
             margin: 0 auto;
             font-size: 25px;
             padding: 5px 10px;
+            margin-bottom: 20px;
+        }
+
+        .buttons-container{
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .btn{
+            width: 50px;
+            text-align: center;
+            padding: 2px 0;
+            font-size: 20px;
+            margin: 3px;
+        }
+
+        .btn-equals{
+            background-color: #FF6348;
         }
     </style>
 </head>
 <body>
     <div class="Calculator-body">
       <input type="text" value="0" class="screen"/>
+      
+      <div class="buttons-container">
+        <button class="btn">AC</button>
+        <button class="btn">7</button>
+        <button class="btn">4</button>
+        <button class="btn">1</button>
+        <button class="btn">0</button>
+
+        <button class="btn">M+</button>
+        <button class="btn">8</button>
+        <button class="btn">2</button>
+        <button class="btn">5</button>
+        <button class="btn">.</button>
+
+        <button class="btn">/</button>
+        <button class="btn">9</button>
+        <button class="btn">6</button>
+        <button class="btn">3</button>
+        <button class="btn">%</button>
+
+        <button class="btn">X</button>
+        <button class="btn">-</button>
+        <button class="btn">+</button>
+        <button class="btn btn-equals">=</button>
+
+
+      </div>
     </div>
 </body>
 </html>
